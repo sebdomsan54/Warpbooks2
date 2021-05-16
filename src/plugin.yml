@@ -1,4 +1,5 @@
 name: Warpbooks2
 main: XinXin.Warpbooks2.Main
 version: Rev2.1.0
+api-version: 1.16
 description: A phisical Teleportation Plugin. Ment to make server teleportation more imersive.

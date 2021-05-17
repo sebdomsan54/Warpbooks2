@@ -4,31 +4,27 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>XinXin.Warpbooks2.Main</groupId>
-    <artifactId>Warpbooks2</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <groupId>com.sebdomsan54</groupId>
+    <artifactId>WarpBooks2</artifactId>
+    <version>2.0</version>
 
     <properties>
         <maven.compiler.source>15</maven.compiler.source>
         <maven.compiler.target>15</maven.compiler.target>
     </properties>
-
     <repositories>
-        <!-- This adds the Spigot Maven repository to the build -->
         <repository>
             <id>spigot-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/org/spigotmc/spigot-api/</url>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
     </repositories>
 
     <dependencies>
-        <!--This adds the Spigot API artifact to the build -->
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.16.5-R0.1-SNAPSHOT</version>
+            <version>1.16.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
-
 </project>

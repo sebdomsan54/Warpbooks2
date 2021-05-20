@@ -15,9 +15,14 @@ public class EventsListeners implements Listener{
 
     @EventHandler
     public void onPlayerClicks(PlayerInteractEvent event) throws InterruptedException {
+        Player player = event.getPlayer();
+        Action action = event.getAction();
+        if(action.toString() == "RIGHT_CLICK_AIR" || action.toString() == "RIGHT_CLICK_BLOCK"){
+            player.sendMessage(event.getItem().toString());
+        }
         event.setCancelled(true);
-
         event.setCancelled(false);
     }
+
 
 }

@@ -1,10 +1,17 @@
 package sebdomsan54.warpbooks2;
 
 import org.bukkit.Bukkit;
+
 import org.bukkit.plugin.java.JavaPlugin;
 
 
+
+
 public class Main extends JavaPlugin {
+
+    //Config Object setup
+    //private Config config = new Config(new File(this.getDataFolder() + File.separator + "config.yml"));
+
     //Sets up the var plugin to reference this class
     static Main plugin;
     public Main() {
@@ -15,14 +22,20 @@ public class Main extends JavaPlugin {
     public void onEnable() {
         //Call method to load all classes
         plugin.loadClasses();
+        Config.loadConfig();
+
         getLogger().info("Warpbook V2 has loaded");
     }
     @Override
     public void onDisable() {
         getLogger().info("Warpbook V2 has unloaded");
     }
+
     //Method to Load all subclasses
     private void loadClasses() {
         Bukkit.getPluginManager().registerEvents(new EventsListeners(), this);
     }
+
+
+
 }

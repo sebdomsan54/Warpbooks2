@@ -24,7 +24,7 @@ public class EventsListeners implements Listener{
         if(action.toString().equals("RIGHT_CLICK_AIR") || action.toString().equals("RIGHT_CLICK_BLOCK")){
             player.sendMessage(String.valueOf(Objects.requireNonNull(item.getType())));
         }
-        player.sendMessage(Config.loadConfig().getString("youAreAwesome"));
+        //player.sendMessage(Config.loadConfig().getString("youAreAwesome"));
         event.setCancelled(true);
         event.setCancelled(false);
     }

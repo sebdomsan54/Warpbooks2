@@ -21,7 +21,8 @@ public class Main extends JavaPlugin {
     public void onEnable() {
         //Call method to load all classes
         plugin.loadClasses();
-        //Config.loadConfig();
+        //Config.buildConfig();
+
 
         getLogger().info("Warpbook V2 has loaded");
     }
